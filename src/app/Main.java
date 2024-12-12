@@ -1,7 +1,12 @@
 package app;
 
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        DataHandler handler = new DataHandler();
+        UiOperator uiOperator = new UiOperator();
+        uiOperator.getOutput(handler.getAll());
+        uiOperator.getOutput(handler.getById(172));
     }
 }
+
